@@ -1,0 +1,19 @@
+---
+layout: default
+title: Projects
+permalink: /projects
+---
+
+<h1>Projects</h1>
+<p>
+    Here's a list of some of my favorite projects:
+</p>
+
+<ul class="projects-list">
+    {% for project in site.projects %}
+        <li class="project">
+            <h2><a href="{{ project.url }}">{{ project.name | downcase }}</a></h2>
+            <h3>{{ project.description }}</h3>
+        </li>
+    {% endfor %}
+</ul>

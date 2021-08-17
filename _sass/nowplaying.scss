@@ -1,0 +1,97 @@
+.now-playing {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    height: 64px;
+    padding: 8px;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: end;
+    font-weight: 400;
+}
+
+.music-cover {
+    margin-left: 4px;
+    border-radius: 8px;
+}
+
+.smol {
+    font-size: 0.9em;
+}
+
+.recently-played {
+    font-size: 24px;
+    margin-left: 16px;
+    color: #77dd77;
+}
+
+.music-bars {
+    display: flex;
+    flex-direction: row;
+    vertical-align: bottom;
+    height: 26px;
+}
+
+.music-bars > span {
+    display: block;
+    width: 8px;
+    margin-left: 8px;
+    height: 4px;
+    margin-top: 22px;
+    background-color: #77dd77;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .music-bars > span {
+        animation: music-bar 1s linear infinite;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .music-bars > .bar-1 {
+        height: 4px;
+        margin-top: 22px;
+    }
+
+    .music-bars > .bar-3 {
+        height: 15px;
+        margin-top: 11px;
+    }
+
+    .music-bars > .bar-2 {
+        animation-delay: 750ms;
+        height: 26px;
+        margin-top: 0px;
+    }
+}
+
+.music-bars > .bar-1 {
+    animation-delay: 250ms;
+}
+
+.music-bars > .bar-3 {
+    animation-delay: 500ms;
+}
+
+.music-bars > .bar-2 {
+    animation-delay: 750ms;
+}
+
+@keyframes music-bar {
+    from {
+        height: 4px;
+        margin-top: 22px;
+    }
+
+    50% {
+        height: 26px;
+        margin-top: 0;
+    }
+
+    to {
+        height: 4px;
+        margin-top: 22px;
+    }
+}

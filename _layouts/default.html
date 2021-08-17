@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>{{ site.title }} - {{ page.title | downcase }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://twemoji.maxcdn.com/v/13.0.2/twemoji.min.js" integrity="sha384-wyB/MspSJ/r2bT2kCj44qtsYRYlpzO2oAPhRj5myrWD63dt6qWv4x8AZe7Fl3K3b" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fb3a746f63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% include nav.html %}
+    <div class="content-container">
+        <main class="content">
+            {{ content }}
+        </main>
+    </div>
+    <script>
+        twemoji.parse(document.body, {
+            ext: ".svg",
+            size: "svg"
+        });
+    </script>
+
+    <!-- So Marstodon link verification passes -->
+    <a rel="me" href="https://tech.lgbt/@ash"></a>
+</body>
+</html>

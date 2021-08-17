@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300%3B400%3B700&display=swap");
+
+body {
+    font-family: Oxygen, Helvetica Neue, arial, sans-serif;
+}
+
+// Constants
+$nav-colour: #29044B;
+$nav-underline-colour: #0E0444;
+$nav-link-colour: #EA7AF4;
+
+$background-colour: #3C0454;
+$background-accent: #57045C;
+$accent-colour: #EA7AF4;
+
+// Base styles
+a {
+    color: $accent-colour;
+    font-weight: bold;
+}
+
+code {
+    background-color: $background-accent;
+    padding: 6px;
+    border-radius: 2px;
+    border: 1px solid $nav-colour;
+}
+
+body {
+    background-color: $background-colour;
+    color: white;
+}
+
+// Navigation
+.nav-bar {
+    background-color: $nav-colour;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 2px solid $nav-underline-colour;
+}
+
+.nav-bar > a {
+    color: $nav-link-colour;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin-right: 8px;
+}
+
+.nav-item.current {
+    text-decoration: underline;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+// Page content
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.content {
+    width: 95%;
+    max-width: 960px;
+}
+
+.emoji {
+    height: 1em;
+}
+
+// Projects list
+.projects-list {
+    border: 2px solid $accent-colour;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.project {
+    list-style-type: none;
+    border-top: 1px solid $accent-colour;
+    border-bottom: 1px solid $accent-colour;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.project:first-child {
+    border-top: none;
+}
+
+.project:last-child {
+    border-bottom: none;
+}

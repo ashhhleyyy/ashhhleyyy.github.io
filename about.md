@@ -7,7 +7,7 @@ permalink: /about
 <img width="96" class="nav-item avatar" src="/assets/ash.png">
 # Hello 👋!
 
-I'm Ash, and I'm a trans girl from the UK who does random [projects](/projects) with [Minecraft](https://minecraft.net/), [Rust](https://rust-lang.org/) and other things.
+I'm Ash, and I'm a trans girl from the UK who goes by `she/they` pronouns. I make random [projects](/projects) with [Minecraft](https://minecraft.net/), [Rust](https://rust-lang.org/) and other things.
 
 You can find me on quite a few platforms, such as the following:
 - <i class="fab fa-discord"></i>  [Discord (@Ash.#7558)](https://discord.com/users/828168927762841601)

@@ -1,5 +1,5 @@
 (async function updateNowPlaying() {
-    // Thanks tom for hosting this :)
+    // Thanks Ash for hosting this :)
     const res = await fetch('https://api.tomthegeek.ml/ash/music');
     if (!res.ok) {
         console.log('Failed to fetch now playing');
@@ -43,7 +43,7 @@ function setTrack(track) {
     const album = track.album.toLowerCase();
     const artist = track.artist.toLowerCase();
     document.getElementById('track').innerText = title;
-    if (title !== album) {
+    if (title !== album && album !== "") {
         document.getElementById('album').innerText = 'on ';
         const e = document.createElement('b');
         e.innerText = album;

@@ -1,5 +1,5 @@
 (async function updateNowPlaying() {
-    // Thanks Ash for hosting this :)
+    // Thanks Tom for hosting this :)
     const res = await fetch('https://api.tomthegeek.ml/ash/music');
     if (!res.ok) {
         console.log('Failed to fetch now playing');

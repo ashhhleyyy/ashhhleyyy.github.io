@@ -23,10 +23,6 @@
     border-radius: 8px;
 }
 
-.col {
-    color: var(--accent);
-}
-
 .smol {
     font-size: 0.9em;
 }

@@ -1,6 +1,7 @@
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "preact/hooks";
+import H from "./Highlight";
 
 import './nowplaying.css';
 
@@ -40,11 +41,11 @@ export default function NowPlaying() {
     return <div class="now-playing" id="now-playing">
         <div class="track-info">
             <div>
-                <b id="track" class="col">{title}</b>
-                { title !== album && <> on <b class="col">{album}</b></> }
+                <H>{title}</H>
+                { title !== album && <> on <H>{album}</H></> }
             </div>
             <div class="smol">
-                by <b class="col">{artist}</b>
+                by <H>{artist}</H>
             </div>
         </div>
         {status.state === 'recently_listened' && <FontAwesomeIcon icon={faClock} title="Recently listened to" className="recently-played" />}

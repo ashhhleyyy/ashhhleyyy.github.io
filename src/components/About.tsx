@@ -21,7 +21,8 @@ export function About() {
                 <Fade>
                     <h1>About</h1>
                     <p>
-                        Hi, I'm <H>Ashley</H> (or <H>Ash</H> for short), and I'm a trans girl from the UK who goes by <H>she/they</H> pronouns.
+                        Hi, I'm <H>Ashley</H> (or <H>Ash</H> for short), and I'm a trans girl from the UK.
+                        I go by <a href="https://pronouns.page/@ashhhleyyy"><H>she/they</H></a> pronouns.
                         I make random projects with Minecraft, Rust and other things.
                     </p>
 

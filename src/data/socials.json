@@ -1,0 +1,29 @@
+{
+    "socials": [
+        {
+            "type": "discord",
+            "url": "https://discord.com/users/828168927762841601",
+            "username": "Ash.#7558"
+        },
+        {
+            "type": "mastodon",
+            "url": "https://tech.lgbt/@ash",
+            "username": "@ash@tech.lgbt"
+        },
+        {
+            "type": "reddit",
+            "url": "https://reddit.com/u/ash_b_",
+            "username": "/u/ash_b_"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/ashhhleyyy",
+            "username": "ashhhleyyy"
+        },
+        {
+            "type": "matrix",
+            "url": "https://matrix.to/#/@ash:tomthegeek.ml",
+            "username": "@ash:tomthegeek.ml"
+        }
+    ]
+}

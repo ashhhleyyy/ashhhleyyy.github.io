@@ -1,0 +1,27 @@
+{
+    "projects": {
+        "2021": [
+            {
+                "title": "Player Pronouns",
+                "link": "https://github.com/ashhhleyyy/player-pronouns/releases",
+                "description": "A server-side mod for Minecraft to allow players on a server to share their pronouns."
+            },
+            {
+                "title": "notme.ml",
+                "link": "https://notme.ml",
+                "description": "A simple website inspired by ppl.moe that allows sharing a collection of social media links on a clean card page."
+            },
+            {
+                "title": "fsh",
+                "link": "https://github.com/ashhhleyyy/fsh",
+                "description": "A simple and clean prompt that I use for my fish shell."
+            },
+            {
+                "title": "ggc",
+                "link": "https://github.com/ashhhleyyy/ggc",
+                "description": "An implementation of a server for the Gemini protocol."
+            }
+        ],
+        "2022": []
+    }
+}

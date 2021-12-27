@@ -1,0 +1,12 @@
+/* Needed because fontawesome's styles are injected by JS and aren't included in prerenders */
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}

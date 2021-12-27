@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400%3B700&display=swap");
+
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #282C34;
+  font-family: Roboto, 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  text-align: center;
+  background-color: #282C34;
+  color: #fff;
+}
+
+a {
+  color: white;
+}
+
+b {
+  font-weight: 700;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-content {
+  width: 95%;
+  max-width: 960px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.updown {
+  font-size: 1.5rem;
+}
+
+.updown > a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.updown > a > svg {
+  transition: transform 100ms ease;
+}
+
+.up:hover > a > svg {
+  transform: translateY(-4px);
+}
+
+.down:hover > a > svg {
+  transform: translateY(4px);
+}

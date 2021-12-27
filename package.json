@@ -1,0 +1,26 @@
+{
+  "name": "ashhhleyyy.github.io",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --ssr ./src/prerender-entry.tsx --outDir ./.prerender-dist && node ./build.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "preact": "^10.5.15",
+    "preact-render-to-string": "^5.1.19",
+    "react-reveal": "^1.2.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.1.5",
+    "@types/node": "^17.0.5",
+    "glob": "^7.2.0",
+    "glob-promise": "^4.2.2",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  }
+}

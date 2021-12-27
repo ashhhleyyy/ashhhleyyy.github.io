@@ -1,0 +1,15 @@
+/* a shoe is a container for feet :P */
+.shoe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.feet {
+    margin: 8px 0;
+    padding: 8px 0;
+    width: 95%;
+    border-top: 2px solid var(--accent);
+}

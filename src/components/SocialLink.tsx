@@ -53,7 +53,7 @@ const SocialLink: FunctionalComponent<Props> = (props) => {
         return <>
             { type.icon && <FontAwesomeIcon icon={type.icon} /> }
             {' '}
-            <a href={props.url}>{ type.name } ({props.username})</a>
+            <a href={props.url} rel="me noreferrer noopener">{ type.name } ({props.username})</a>
         </>
     } else {
         return <>

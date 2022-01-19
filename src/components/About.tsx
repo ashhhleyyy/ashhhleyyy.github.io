@@ -1,5 +1,5 @@
 import Fade from "react-reveal/Fade";
-import H from './Highlight';
+import H, { HA } from './Highlight';
 import { socials } from '../data/socials.json';
 import SocialLink from "./SocialLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +22,7 @@ export function About() {
                     <h1>About</h1>
                     <p>
                         Hi, I'm <H>Ashley</H> (or <H>Ash</H> for short), and I'm a trans girl from the UK.
-                        I go by <a href="https://pronouns.page/@ashhhleyyy"><H>she/they</H></a> pronouns.
+                        I go by <HA href="https://pronouns.page/@ashhhleyyy">she/they</HA> pronouns.
                         I make random projects with Minecraft, Rust and other things.
                     </p>
 
@@ -35,7 +35,13 @@ export function About() {
                             </li>)}
                         </ul>
 
-                        I also have several accounts under my old name, so send me a DM on Discord or Matrix if you are interested.
+                        I also have several accounts under my old name, so send me an email if you are interested.
+                    </p>
+
+                    <p>
+                        If you want to encrypt a message you send to me, you can do so using <HA href="/pgp_key.txt">my GPG key for <code>ash@ashhhleyyy.dev</code></HA>.
+                        <br />
+                        Its fingerprint is <code>3CBB C2C5 E84D 7A5D D072 7D9E 83B7 8908 1A08 78FB</code>.
                     </p>
                 </Fade>
             </div>

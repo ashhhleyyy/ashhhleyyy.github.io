@@ -6,6 +6,10 @@
             "username": "Ash.#7558"
         },
         {
+            "type": "email",
+            "username": "ash@ashhhleyyy.dev"
+        },
+        {
             "type": "mastodon",
             "url": "https://tech.lgbt/@ash",
             "username": "@ash@tech.lgbt"

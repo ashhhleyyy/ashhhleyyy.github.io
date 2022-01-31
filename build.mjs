@@ -24,7 +24,8 @@ const indexHtml = (await readFile('./dist/index.html')).toString('utf-8');
 // Inject prerendered HTML
 const newIndex = indexHtml
     .replace('<!-- %prerender_target% -->', prerenderHtml)
-    .replace('<!-- %prerender_head% -->', cssLinks);
+    .replace('<!-- %prerender_head% -->', cssLinks)
+    .replace('<!-- %analytics% -->', '<script src="https://a.ashhhleyyy.dev/tracker.js" async defer></script>');
 
 // Write new index
 await writeFile('./dist/index.html', newIndex);

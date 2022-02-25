@@ -6,37 +6,31 @@ import H from "./Highlight";
 import './nowplaying.css';
 
 interface Status {
-    state: 'none' | 'now_playing' | 'recently_listened'
-    track: Track | undefined
-}
-
-interface Track {
+    state: 'recent' | 'playing'
     title: string
     album: string
     artist: string
 }
 
 async function fetchStatus(): Promise<Status> {
-    return fetch('https://api.tomthegeek.ml/ash/music').then(res => res.json()).catch(console.error);
+    return fetch('https://api.ashhhleyyy.dev/playing').then(res => res.json()).catch(console.error);
 }
 
 export default function NowPlaying() {
     const [status, setStatus] = useState({
-        state: 'recently_listened',
-        track: {
-            title: 'Beep boop',
-            album: 'Beep bop',
-            artist: 'The Server',
-        }
+        state: 'recent',
+        title: 'Beep boop',
+        album: 'Beep bop',
+        artist: 'The Server',
     } as Status);
 
     useEffect(() => {
         fetchStatus().then(setStatus);
     }, []);
 
-    const title = status.track?.title.toLowerCase();
-    const album = status.track?.album.toLowerCase();
-    const artist = status.track?.artist.toLowerCase();
+    const title = status.title.toLowerCase();
+    const album = status.album.toLowerCase();
+    const artist = status.artist.toLowerCase();
 
     return <div class="now-playing" id="now-playing">
         <div class="track-info">
@@ -48,9 +42,9 @@ export default function NowPlaying() {
                 by <H>{artist}</H>
             </div>
         </div>
-        {status.state === 'recently_listened' && <FontAwesomeIcon icon={faClock} title="Recently listened to" className="recently-played" />}
+        {status.state === 'recent' && <FontAwesomeIcon icon={faClock} title="Recently listened to" className="recently-played" />}
         {
-            status.state === 'now_playing' &&
+            status.state === 'playing' &&
                 <div class="music-bars" title="Currently listening to">
                     { [1, 2, 3].map(i => <span class={`bar-${i}`} />) }
                 </div>
